@@ -148,42 +148,17 @@ html {
     letter-spacing: 1px;
 }
 
-@media(max-width: 900px) {
-    #bio-circle{
-        float: none;
-        width: 80vw;
-        height: 80vw;
-        margin: 0px auto;
-    }
-    #projects{
-        width: 80vw;
-        float: none;
-        margin: 0px auto;
-        display: block;
-    }
-    #part1{
-        height: 150vw; 
-        padding-right: 0px;
-    }
-    #bio p{
-    font-size: 2vw;
-    line-height: 3vw;
-    }
-    #bio h1{
-        font-size: 5vw;
-    }
-}
-
 #button {
     position: fixed;
     bottom: 60px;
     right: 0;
     border: none;
-    padding: 10px 0 10px 10px;
+    padding: 10px 10px 10px 20px;
     width: 100px;
     height: 50px;
     background-color: rgb(228, 121, 89);
     color: rgb(255, 245, 236);
+    font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
 }
 #button:active {
@@ -217,4 +192,46 @@ html {
     background-color: rgb(228, 121, 89);
     transition: 0.1s;
     pointer-events: none;
+}
+
+@media(max-width: 900px) {
+    #bio-circle {
+        float: none;
+        width: 80vw;
+        height: 80vw;
+        margin: 0px auto;
+    }
+
+    #projects {
+        width: 80vw;
+        float: none;
+        margin: 0px auto;
+        display: block;
+    }
+
+    #part1 {
+        height: 150vw;
+        padding-right: 0px;
+    }
+
+    #bio p {
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+
+    #bio h1 {
+        font-size: 5vw;
+    }
+
+    #button {
+        padding: 8px 0 10px 15px;
+        width: 50px;
+        font-size: 0.6em;
+    }
+
+    #button:after {
+        border-left: 13px solid rgb(255, 245, 236);
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
 }
